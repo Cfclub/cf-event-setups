@@ -1,0 +1,32 @@
+CONNESTEE FALLS — EVENT SETUP REFERENCE
+How to add or change a setup
+----------------------------------------
+1. Put the photo(s) in the "photos" folder. Phone photos are fine.
+   Name them something simple, no spaces: holiday-party-1.jpg
+
+2. Open setups.js in any text editor (Notepad, TextEdit).
+   Copy one of the existing { ... } blocks, paste it below,
+   and change the words. Keep the commas and quotes as they are.
+
+3. New room? Add it to the ROOMS line near the top so it gets
+   a filter button.
+
+4. Save, publish (below), refresh the page on your phone.
+
+How to publish (first time)
+----------------------------------------
+1. Go to https://app.netlify.com/drop  (free)
+2. Drag this whole folder onto the page.
+3. Netlify gives you a link. Rename it under
+   Site settings > Change site name, e.g. cf-setups.netlify.app
+4. Make a QR code of the link for the storage room door.
+
+How to publish an update
+----------------------------------------
+Log in to Netlify, open the site, go to Deploys, and drag the
+folder onto the page again. The link stays the same.
+
+If anything breaks
+----------------------------------------
+Nine times out of ten it's a missing comma or quote in setups.js.
+Compare your new block to one that works.

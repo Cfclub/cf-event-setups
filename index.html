@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F2EEE5">
+<title>Event Setups — Connestee Falls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F2EEE5;
+    --olive: #666841;
+    --olive-soft: rgba(102,104,65,.18);
+    --slate: #4D5E66;
+    --slate-soft: rgba(77,94,102,.10);
+    --gray: #555555;
+    --ink: #2A2A22;
+    --white: #FFFFFF;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Red Hat Display", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  a { color: inherit; }
+  button { font: inherit; color: inherit; }
+  img { display: block; max-width: 100%; }
+  :focus-visible { outline: 3px solid var(--slate); outline-offset: 2px; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 18px calc(40px + env(safe-area-inset-bottom)); }
+
+  .mast {
+    padding: 22px 0 14px;
+    border-bottom: 1px solid var(--olive-soft);
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  }
+  .mast h1 { margin: 0; font-size: 22px; font-weight: 700; color: var(--olive); letter-spacing: -.01em; }
+  .mast .club { font-size: 13px; color: var(--gray); font-weight: 500; white-space: nowrap; }
+
+  .search { margin: 18px 0 12px; position: relative; }
+  .search input {
+    width: 100%; padding: 13px 16px 13px 44px;
+    font: inherit; font-size: 17px;
+    border: 1.5px solid var(--olive-soft); border-radius: var(--radius);
+    background: var(--white); color: var(--ink);
+  }
+  .search input::placeholder { color: #9a9a92; }
+  .search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--gray); pointer-events: none; }
+
+  .rooms { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+  .rooms button {
+    padding: 7px 14px; border-radius: 999px; cursor: pointer;
+    border: 1.5px solid var(--olive-soft); background: transparent; color: var(--olive); font-weight: 600; font-size: 15px;
+  }
+  .rooms button[aria-pressed="true"] { background: var(--olive); border-color: var(--olive); color: var(--cream); }
+
+  .list { list-style: none; margin: 8px 0 0; padding: 0; }
+  .list li { border-bottom: 1px solid var(--olive-soft); }
+  .list a {
+    display: grid; grid-template-columns: 92px 1fr auto; align-items: center; gap: 16px;
+    padding: 12px 0; text-decoration: none;
+  }
+  .list a:active { background: rgba(255,255,255,.5); }
+  .thumb { width: 92px; height: 72px; object-fit: cover; border-radius: var(--radius); background: var(--olive-soft); }
+  .list .name { font-weight: 700; font-size: 18px; color: var(--ink); line-height: 1.2; }
+  .list .meta { margin-top: 3px; font-size: 14px; color: var(--gray); }
+  .list .meta b { font-weight: 600; color: var(--slate); }
+  .chev { width: 18px; height: 18px; color: var(--olive); opacity: .55; }
+
+  .empty { padding: 40px 0; color: var(--gray); text-align: center; }
+  .count { font-size: 13px; color: var(--gray); margin: 12px 0 0; }
+
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin: 16px 0 12px; padding: 8px 0; text-decoration: none; color: var(--olive); font-weight: 600; font-size: 15px;
+  }
+  .back svg { width: 18px; height: 18px; }
+
+  .photos {
+    display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin: 0 -18px; padding: 0 18px 6px; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .photos::-webkit-scrollbar { display: none; }
+  .photos figure { margin: 0; flex: 0 0 100%; scroll-snap-align: center; }
+  .photos img { width: 100%; height: min(68vw, 420px); object-fit: contain; border-radius: var(--radius); background: var(--white); }
+  .photos.multi figure { flex-basis: 88%; }
+  .photo-hint { font-size: 13px; color: var(--gray); margin: 6px 0 0; }
+  .photos a { display: block; }
+
+  .title { margin: 18px 0 0; }
+  .title h2 { margin: 0; font-size: 30px; line-height: 1.1; font-weight: 700; color: var(--olive); letter-spacing: -.015em; }
+  .title .meta { margin-top: 6px; font-size: 16px; color: var(--gray); }
+  .title .meta b { font-weight: 600; color: var(--slate); }
+
+  .section-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin: 26px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--olive-soft);
+  }
+  .section-head h3 { margin: 0; font-size: 15px; font-weight: 700; color: var(--olive); }
+  .section-head button { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--slate); }
+
+  .steps { list-style: none; margin: 0; padding: 0; }
+  .steps li { border-bottom: 1px solid var(--olive-soft); }
+  .steps label {
+    display: grid; grid-template-columns: 26px 1fr; gap: 14px; align-items: start;
+    padding: 13px 0; cursor: pointer; font-size: 17px; line-height: 1.35;
+  }
+  .steps input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .box {
+    width: 26px; height: 26px; margin-top: 1px; border-radius: 5px;
+    border: 2px solid var(--olive); background: var(--white); display: grid; place-items: center;
+  }
+  .box svg { width: 16px; height: 16px; color: var(--cream); opacity: 0; }
+  .steps input:checked + .box { background: var(--olive); }
+  .steps input:checked + .box svg { opacity: 1; }
+  .steps input:checked ~ span { color: var(--gray); text-decoration: line-through; text-decoration-color: rgba(85,85,85,.5); }
+  .steps input:focus-visible + .box { outline: 3px solid var(--slate); outline-offset: 2px; }
+
+  .notes {
+    margin: 22px 0 0; padding: 14px 16px; border-left: 4px solid var(--slate); background: var(--slate-soft); border-radius: 0 var(--radius) var(--radius) 0;
+  }
+  .notes h3 { margin: 0 0 6px; font-size: 15px; font-weight: 700; color: var(--slate); }
+  .notes ul { margin: 0; padding-left: 18px; }
+  .notes li { margin: 4px 0; }
+
+  .done {
+    margin: 26px 0 0; padding: 14px 16px; border-radius: var(--radius);
+    background: var(--olive); color: var(--cream); font-weight: 600; text-align: center;
+  }
+  .hidden { display: none !important; }
+
+  @media (min-width: 600px) {
+    body { font-size: 18px; }
+    .list a { grid-template-columns: 120px 1fr auto; }
+    .thumb { width: 120px; height: 90px; }
+    .photos.multi figure { flex-basis: 70%; }
+  }
+  @media (prefers-reduced-motion: no-preference) { .box { transition: background .12s ease; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <h1>Event setups</h1>
+    <span class="club">Connestee Falls</span>
+  </header>
+
+  <main id="home">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search setups" autocomplete="off" aria-label="Search setups">
+    </div>
+    <div class="rooms" id="rooms" role="group" aria-label="Filter by room"></div>
+    <ul class="list" id="list"></ul>
+    <p class="empty hidden" id="empty">Nothing matches. Try a different word, or clear the room filter.</p>
+    <p class="count" id="count"></p>
+  </main>
+
+  <main id="detail" class="hidden">
+    <a class="back" href="#" id="backlink">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      All setups
+    </a>
+    <div class="photos" id="photos"></div>
+    <p class="photo-hint" id="photohint"></p>
+    <div class="title">
+      <h2 id="d-name"></h2>
+      <div class="meta" id="d-meta"></div>
+    </div>
+    <div class="section-head">
+      <h3>Setup checklist</h3>
+      <button type="button" id="reset">Clear checks</button>
+    </div>
+    <ul class="steps" id="steps"></ul>
+    <div class="done hidden" id="done">All set — do a last walk-through against the photo.</div>
+    <div class="notes hidden" id="notes">
+      <h3>Don't forget</h3>
+      <ul id="notelist"></ul>
+    </div>
+  </main>
+</div>
+
+<script src="setups.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const home = $("home"), detail = $("detail");
+  let activeRoom = "All";
+  let query = "";
+
+  function metaHTML(el, s) {
+    el.innerHTML = `<b></b>${s.headcount ? " · " : ""}<span></span>`;
+    el.querySelector("b").textContent = s.room;
+    el.querySelector("span").textContent = s.headcount || "";
+  }
+
+  function renderRooms() {
+    const wrap = $("rooms");
+    wrap.innerHTML = "";
+    ["All", ...ROOMS].forEach((r) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = r;
+      b.setAttribute("aria-pressed", r === activeRoom);
+      b.addEventListener("click", () => { activeRoom = r; renderRooms(); renderList(); });
+      wrap.appendChild(b);
+    });
+  }
+
+  function renderList() {
+    const list = $("list");
+    list.innerHTML = "";
+    const q = query.trim().toLowerCase();
+    const items = SETUPS.filter((s) => {
+      if (activeRoom !== "All" && s.room !== activeRoom) return false;
+      if (!q) return true;
+      const hay = [s.name, s.room, s.headcount, ...(s.steps || []), ...(s.notes || [])].join(" ").toLowerCase();
+      return hay.includes(q);
+    });
+    items.forEach((s) => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#" + s.id;
+      const img = document.createElement("img");
+      img.className = "thumb"; img.alt = ""; img.loading = "lazy";
+      if (s.photos && s.photos[0]) img.src = s.photos[0];
+      const txt = document.createElement("div");
+      txt.innerHTML = `<div class="name"></div><div class="meta"></div>`;
+      txt.querySelector(".name").textContent = s.name;
+      metaHTML(txt.querySelector(".meta"), s);
+      a.append(img, txt);
+      a.insertAdjacentHTML("beforeend", `<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>`);
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    $("empty").classList.toggle("hidden", items.length > 0);
+    $("count").textContent = items.length ? `${items.length} of ${SETUPS.length} setups` : "";
+  }
+
+  $("q").addEventListener("input", (e) => { query = e.target.value; renderList(); });
+
+  function renderDetail(s) {
+    $("d-name").textContent = s.name;
+    metaHTML($("d-meta"), s);
+
+    const ph = $("photos");
+    ph.innerHTML = "";
+    const photos = s.photos || [];
+    ph.classList.toggle("multi", photos.length > 1);
+    photos.forEach((src, i) => {
+      const f = document.createElement("figure");
+      const a = document.createElement("a");
+      a.href = src; a.target = "_blank"; a.rel = "noopener";
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = `${s.name}, reference photo ${i + 1}`;
+      a.appendChild(img); f.appendChild(a); ph.appendChild(f);
+    });
+    ph.scrollLeft = 0;
+    $("photohint").textContent = photos.length > 1 ? "Swipe for more photos · tap a photo to zoom" : "Tap the photo to zoom";
+
+    const ul = $("steps");
+    ul.innerHTML = "";
+    (s.steps || []).forEach((step) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span></span></label>`;
+      li.querySelector("span:last-child").textContent = step;
+      li.querySelector("input").addEventListener("change", updateDone);
+      ul.appendChild(li);
+    });
+    updateDone();
+
+    const notes = s.notes || [];
+    $("notes").classList.toggle("hidden", notes.length === 0);
+    const nl = $("notelist");
+    nl.innerHTML = "";
+    notes.forEach((n) => { const li = document.createElement("li"); li.textContent = n; nl.appendChild(li); });
+  }
+
+  function updateDone() {
+    const boxes = [...$("steps").querySelectorAll("input")];
+    const all = boxes.length > 0 && boxes.every((b) => b.checked);
+    $("done").classList.toggle("hidden", !all);
+  }
+
+  $("reset").addEventListener("click", () => {
+    $("steps").querySelectorAll("input").forEach((b) => (b.checked = false));
+    updateDone();
+  });
+
+  function route() {
+    const id = decodeURIComponent(location.hash.replace(/^#/, ""));
+    const s = id && SETUPS.find((x) => x.id === id);
+    if (s) {
+      renderDetail(s);
+      home.classList.add("hidden");
+      detail.classList.remove("hidden");
+      document.title = `${s.name} — Event setups`;
+      window.scrollTo(0, 0);
+    } else {
+      detail.classList.add("hidden");
+      home.classList.remove("hidden");
+      document.title = "Event setups — Connestee Falls";
+    }
+  }
+  $("backlink").addEventListener("click", (e) => { e.preventDefault(); history.length > 1 ? history.back() : (location.hash = ""); });
+
+  window.addEventListener("hashchange", route);
+  renderRooms();
+  renderList();
+  route();
+})();
+</script>
+</body>
+</html>
