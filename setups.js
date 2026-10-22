@@ -163,6 +163,25 @@ const SETUPS = [
     ],
   },
   {
+    id: "carolina-1-standard",
+    name: "Carolina 1 — Standard Dining Setup",
+    room: "Overlook",
+    headcount: "Everyday layout",
+    photos: ["photos/carolina-1-a.jpg", "photos/carolina-1-b.jpg"],
+    steps: [
+      "Rounds 1–3 along the window wall, as on the table map",
+      "Square tables 4–11 in two columns, turned on point (diamond)",
+      "Line up the points of the squares so each column runs straight down the room",
+      "4 chairs per table, pushed in",
+      "Salt, pepper, and candle on every table",
+      "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
+    ],
+    notes: [
+      "Points of the tables lined up is what makes the room look right from the entrance — sight down each column before you leave",
+      "If you reset after an event, this is the layout to return to",
+    ],
+  },
+  {
     id: "overlook-table-numbers",
     name: "Overlook Dining Room — Table Numbers",
     room: "Overlook",
