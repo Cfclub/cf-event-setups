@@ -173,7 +173,6 @@ const SETUPS = [
       "Square tables 4–11 in two columns, turned on point (diamond)",
       "Line up the points of the squares so each column runs straight down the room",
       "4 chairs per table, pushed in",
-      "Salt, pepper, and candle on every table",
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
     ],
     notes: [
