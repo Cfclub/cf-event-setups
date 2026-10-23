@@ -46,6 +46,27 @@ const SETUPS = [
     ],
   },
   {
+    id: "fishing-club-meeting",
+    name: "Fishing Club — Monthly Meeting",
+    room: "Cherokee",
+    headcount: "About 40 seated",
+    photos: ["photos/fishing-club.jpg"],
+    steps: [
+      "Chairs in a wide semicircle facing the screen, 3 rows deep, with the center open (see photo)",
+      "Podium at the front, screen side",
+      "American flag on its stand to the left of the podium",
+      "Skirted table against the back wall for the laptop / presenter",
+      "A/V: screen down, projector on, ClickShare ready for a PowerPoint — no microphone needed",
+      "Coffee station: silver table at the Cherokee entrance with coffee, water, cups",
+      "Pastries on the coffee station",
+    ],
+    notes: [
+      "Flag goes out every time — don't skip it",
+      "No mic needed, but have the AV closet unlocked in case the presenter asks",
+      "Coffee and pastries come from F&B — confirm the headcount with them the day before",
+    ],
+  },
+  {
     id: "strings-and-things",
     name: "Strings & Things",
     room: "Hemlock",
