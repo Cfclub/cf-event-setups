@@ -97,7 +97,6 @@ const SETUPS = [
       "Breakout rooms: 10 chairs each in a curve, music stand and keyboard at the front (see lower boxes on the plan)",
     ],
     notes: [
-      "Any extra chairs (the gold banquet chairs) go back in storage — the right wall should be clear. Ignore them in the photos.",
       "On the plan: KB = keyboard, MS = music stand",
       "Rehearsals are Thursdays, roughly 1:00–5:00, for the length of the season — check the current schedule for start and end dates",
       "Last two weeks of the season move to Cherokee with the full stage and risers (see Chorale — Stage & Risers)",
