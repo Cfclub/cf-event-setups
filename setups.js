@@ -22,7 +22,7 @@
 //  Copy a block, paste it, change the words, save. Refresh the page.
 // ============================================================
 
-const ROOMS = ["Cherokee", "Hemlock", "Oak", "Willow", "Overlook", "Pavilion"];
+const ROOMS = ["Cherokee", "Hemlock", "Oak", "Willow", "Overlook", "Lounge", "Pavilion"];
 
 const SETUPS = [
   {
@@ -195,6 +195,25 @@ const SETUPS = [
     ],
     notes: [
       "Keep the path past the column clear",
+      "If you reset after an event, this is the layout to return to",
+    ],
+  },
+  {
+    id: "lounge-standard",
+    name: "Lounge — Standard Setup",
+    room: "Lounge",
+    headcount: "Everyday layout",
+    photos: ["photos/lounge-1.jpg", "photos/lounge-2.jpg", "photos/lounge-3.jpg", "photos/lounge-4.jpg", "photos/lounge-5.jpg"],
+    steps: [
+      "Square tables on point (diamond) through the middle of the room, 4 chairs each",
+      "Two squares pushed together end to end for the long tables, chairs down both sides",
+      "Tables along the window wall for the view; keep the center aisle open from the bar to the windows",
+      "Line up the points of the squares so each row reads straight",
+      "Chairs pushed in, all facing the table",
+      "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
+    ],
+    notes: [
+      "Hardwood floor — lift chairs, don't drag them",
       "If you reset after an event, this is the layout to return to",
     ],
   },
