@@ -217,6 +217,7 @@ const SETUPS = [
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
     ],
     notes: [
+      "Points of the squares lined up is what makes the room look right from the entrance",
       "Keep the path past the column clear",
       "If you reset after an event, this is the layout to return to",
     ],
@@ -267,10 +268,12 @@ const SETUPS = [
     steps: [
       "3 round tables along the window wall, 4 chairs each",
       "3 square tables down the inside of the room, 4 chairs each",
+      "Line up the points of the square tables so they read as a straight row",
       "Chairs pushed in, all facing the table",
       "Keep the walkway open from the door to the counter at the back",
     ],
     notes: [
+      "Points of the squares lined up is what makes the room look right from the door",
       "If you reset after an event, this is the layout to return to",
     ],
   },
@@ -282,10 +285,12 @@ const SETUPS = [
     photos: ["photos/oak-standard.jpg"],
     steps: [
       "Square tables along both long walls — 3 down the picture-wall side, 3 down the window side, 1 at the back by the counter",
+      "Line up the points of the square tables so each side reads as a straight row",
       "4 chairs per table, pushed in, all facing the table",
       "Keep the center aisle open from the door to the back counter",
     ],
     notes: [
+      "Points of the squares lined up is what makes the room look right from the door",
       "If you reset after an event, this is the layout to return to",
     ],
   },
