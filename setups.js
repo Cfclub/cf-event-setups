@@ -192,13 +192,15 @@ const SETUPS = [
     headcount: "Everyday layout",
     photos: ["photos/carolina-1-a.jpg", "photos/carolina-1-b.jpg"],
     steps: [
-      "3 round tables along the window wall",
-      "8 square tables in two columns, turned on point (diamond)",
+      "Left (window) side: 2 rounds along the window wall, with one square four-top in the second spot",
+      "Right side: square four-tops on point (diamond) in a column, with a round in the back right corner",
       "Line up the points of the squares so each column runs straight down the room",
+      "Keep the center aisle open the full length of the room",
       "4 chairs per table, pushed in",
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
     ],
     notes: [
+      "Layout changed Oct 2026 — the photos are current. Table 2 (left side) is now a square; the back right corner is now a round.",
       "Points of the tables lined up is what makes the room look right from the entrance — sight down each column before you leave",
       "If you reset after an event, this is the layout to return to",
     ],
