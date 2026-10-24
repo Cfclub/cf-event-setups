@@ -275,6 +275,21 @@ const SETUPS = [
     ],
   },
   {
+    id: "oak-standard",
+    name: "Oak — Standard Setup",
+    room: "Oak",
+    headcount: "7 square tables",
+    photos: ["photos/oak-standard.jpg"],
+    steps: [
+      "Square tables along both long walls — 3 down the picture-wall side, 3 down the window side, 1 at the back by the counter",
+      "4 chairs per table, pushed in, all facing the table",
+      "Keep the center aisle open from the door to the back counter",
+    ],
+    notes: [
+      "If you reset after an event, this is the layout to return to",
+    ],
+  },
+  {
     id: "overlook-table-numbers",
     name: "Overlook Dining Room — Table Numbers",
     room: "Overlook",
