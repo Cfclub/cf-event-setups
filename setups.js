@@ -192,8 +192,8 @@ const SETUPS = [
     headcount: "Everyday layout",
     photos: ["photos/carolina-1-a.jpg", "photos/carolina-1-b.jpg"],
     steps: [
-      "Rounds 1–3 along the window wall, as on the table map",
-      "Square tables 4–11 in two columns, turned on point (diamond)",
+      "3 round tables along the window wall",
+      "8 square tables in two columns, turned on point (diamond)",
       "Line up the points of the squares so each column runs straight down the room",
       "4 chairs per table, pushed in",
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
@@ -210,8 +210,8 @@ const SETUPS = [
     headcount: "Everyday layout",
     photos: ["photos/carolina-2.jpg"],
     steps: [
-      "Long table (36) along the window wall: squares pushed together end to end, chairs down both sides",
-      "Square tables 31–35, 37, 38 on point (diamond) in the open area toward the stone wall, as on the table map",
+      "Long table along the window wall: squares pushed together end to end, chairs down both sides",
+      "7 square tables on point (diamond) in the open area toward the stone wall",
       "Line up the points of the squares so they read as a straight row",
       "4 chairs per square, pushed in",
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
@@ -292,21 +292,6 @@ const SETUPS = [
     notes: [
       "Points of the squares lined up is what makes the room look right from the door",
       "If you reset after an event, this is the layout to return to",
-    ],
-  },
-  {
-    id: "overlook-table-numbers",
-    name: "Overlook Dining Room — Table Numbers",
-    room: "Overlook",
-    headcount: "Reference map",
-    photos: ["photos/overlook-table-map.jpg"],
-    steps: [
-      "Carolina 1: rounds 1–3 along the window wall, squares 4–11 in two columns",
-      "Vista: squares 21–24 in a row",
-      "Carolina 2: tables 31–38, with the long table 36 at the back",
-    ],
-    notes: [
-      "Use this when a BEO calls out table numbers for a dining room event",
     ],
   },
 ];
