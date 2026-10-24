@@ -243,6 +243,26 @@ const SETUPS = [
     ],
   },
   {
+    id: "lounge-music-night",
+    name: "Lounge — Music Night",
+    room: "Lounge",
+    headcount: "Communal seating",
+    photos: ["photos/lounge-music-night-1.jpg", "photos/lounge-music-night-2.jpg", "photos/lounge-table-map.jpg"],
+    steps: [
+      "Start from the standard Lounge layout, then push the four-tops together into long rows — squares square-on (not on point), edges touching",
+      "Long rows run along the window side and down the center; keep a wide aisle from the bar to the windows",
+      "Keep the tables in order so the numbers still run 1–16 as on the map",
+      "Chairs down both sides of each row, armed chairs on the ends",
+      "Table number stand on every table or pair of tables",
+      "Blue votive candle plus salt and pepper on every table",
+      "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
+    ],
+    notes: [
+      "Hardwood floor — lift chairs, don't drag them",
+      "Reset to Lounge — Standard Setup after the event",
+    ],
+  },
+  {
     id: "overlook-table-numbers",
     name: "Overlook Dining Room — Table Numbers",
     room: "Overlook",
