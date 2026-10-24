@@ -259,6 +259,22 @@ const SETUPS = [
     ],
   },
   {
+    id: "willow-standard",
+    name: "Willow — Standard Setup",
+    room: "Willow",
+    headcount: "3 rounds · 3 squares",
+    photos: ["photos/willow-standard.jpg"],
+    steps: [
+      "3 round tables along the window wall, 4 chairs each",
+      "3 square tables down the inside of the room, 4 chairs each",
+      "Chairs pushed in, all facing the table",
+      "Keep the walkway open from the door to the counter at the back",
+    ],
+    notes: [
+      "If you reset after an event, this is the layout to return to",
+    ],
+  },
+  {
     id: "overlook-table-numbers",
     name: "Overlook Dining Room — Table Numbers",
     room: "Overlook",
