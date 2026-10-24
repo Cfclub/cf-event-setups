@@ -294,4 +294,20 @@ const SETUPS = [
       "If you reset after an event, this is the layout to return to",
     ],
   },
+  {
+    id: "overlook-layout-map",
+    name: "Overlook Dining Room — Layout Map",
+    room: "Overlook",
+    headcount: "Bird's-eye view",
+    photos: ["photos/overlook-table-map.jpg"],
+    steps: [
+      "Carolina 1 (left): 3 rounds along the window wall, 8 squares on point in two columns",
+      "Vista (bottom): 4 squares on point in a row",
+      "Carolina 2 (right): long table at the back, 7 squares on point toward the stone wall",
+      "Line up the points of the squares in every section",
+    ],
+    notes: [
+      "Use this to see how the three sections fit together — the numbers on the map are F&B's, not something the crew sets out",
+    ],
+  },
 ];
