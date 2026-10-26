@@ -169,7 +169,6 @@ const SETUPS = [
     photos: ["photos/cats-stage.jpg"],
     steps: [
       "Open the platforms and hook them together",
-      "Set the 6 triangle wooden pieces in between each level of the platform",
       "Clamp the 5 short railings on the sides of the stage",
       "2 long railings on the ends at the back of the stage",
       "Set the stairs",
