@@ -168,7 +168,6 @@ const SETUPS = [
     headcount: "",
     photos: ["photos/cats-stage.jpg"],
     steps: [
-      "Bring the 3-tier platforms in from the garage",
       "Open the platforms and hook them together",
       "Set the 6 triangle wooden pieces in between each level of the platform",
       "Clamp the 5 short railings on the sides of the stage",
