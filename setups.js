@@ -147,7 +147,7 @@ const SETUPS = [
     headcount: "50 chairs on risers",
     photos: ["photos/chorale-stage.jpg", "photos/chorale-risers.jpg"],
     steps: [
-      "Build the stage first — see Stage Build (3 platforms, railings, dividers)",
+      "Build the stage first (3 platforms, railings, dividers)",
       "4 wooden risers across the front of the stage, numbered 1–4 left to right",
       "14 chair risers behind the stage — double-stack the back 2 rows",
       "50 chairs on the risers, plus the chair boxes",
@@ -164,10 +164,10 @@ const SETUPS = [
   },
   {
     id: "stage-build",
-    name: "Stage Build (CATS / Chorale)",
+    name: "Stage Build — CATS",
     room: "Cherokee",
     headcount: "",
-    photos: ["photos/cats-stage.jpg", "photos/chorale-stage.jpg"],
+    photos: ["photos/cats-stage.jpg"],
     steps: [
       "Bring the 3-tier platforms in from the garage",
       "Open the platforms and hook them together",
@@ -178,7 +178,6 @@ const SETUPS = [
       "Do a walk-around: every railing clamped, no gaps between sections",
     ],
     notes: [
-      "For Chorale, add the 4 wooden risers in front and 3 dividers on the right — see Chorale — Stage & Risers",
     ],
   },
   {
