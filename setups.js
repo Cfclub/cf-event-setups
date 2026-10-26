@@ -63,7 +63,7 @@ const SETUPS = [
     notes: [
       "Flag goes out every time — don't skip it",
       "No mic needed, but have the AV closet unlocked in case the presenter asks",
-      "Coffee and pastries come from F&B — confirm the headcount with them the day before",
+      "Coffee and pastries come from F&B",
     ],
   },
   {
