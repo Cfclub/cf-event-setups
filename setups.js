@@ -82,6 +82,23 @@ const SETUPS = [
     notes: [],
   },
   {
+    id: "quilters-monthly",
+    name: "Quilters — Monthly Meeting",
+    room: "Hemlock",
+    headcount: "About 40 seated",
+    photos: ["photos/quilters.jpg"],
+    steps: [
+      "Chairs theater style facing the TV wall — about 5 rows of 8, no aisle, rows straight",
+      "Head table at the front: 3 squares pushed together end to end, facing the chairs, 4 chairs behind it",
+      "Show-and-tell tables down the window side: 3 squares in a line along the left wall",
+      "One square table and a bar stool at the front corner by the counter",
+      "Leave a wide aisle on the right side of the room",
+    ],
+    notes: [
+      "Line up the chair backs row to row — the room reads sloppy fast if they wander",
+    ],
+  },
+  {
     id: "newbies-bee-bazaar",
     name: "Newbies Bee Bazaar",
     room: "Cherokee",
