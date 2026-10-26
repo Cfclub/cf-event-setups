@@ -95,7 +95,7 @@ const SETUPS = [
       "Leave a wide aisle on the right side of the room",
     ],
     notes: [
-      "Line up the chair backs row to row — the room reads sloppy fast if they wander",
+      "Line up the chair backs row to row",
     ],
   },
   {
