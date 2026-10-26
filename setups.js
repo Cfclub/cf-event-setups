@@ -168,13 +168,14 @@ const SETUPS = [
     headcount: "",
     photos: ["photos/cats-stage.jpg"],
     steps: [
-      "Open the platforms and hook them together",
-      "Clamp the 5 short railings on the sides of the stage",
-      "2 long railings on the ends at the back of the stage",
-      "Set the stairs",
-      "Do a walk-around: every railing clamped, no gaps between sections",
+      "Open the platforms and hook them together with the back of the stage pressed against the wall",
+      "Side railings on both sides — these are the railings with the big C-clamp at the bottom; clamp each one onto the stage edge",
+      "No railing across the back — the wall covers it",
+      "Stairs on both sides of the stage (2 sets)",
+      "Do a walk-around: every C-clamp tight, no gaps between sections, both stair sets solid",
     ],
     notes: [
+      "The CATS railings are not the Chorale railings — look for the C-clamp",
     ],
   },
   {
