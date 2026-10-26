@@ -271,7 +271,6 @@ const SETUPS = [
       "Tables of 8: 3 squares pushed together end to end, square-on, edges tight — always 3 per table",
       "Rows of 8-tops run toward the windows, with an aisle between rows",
       "8 chairs per table: 3 down each side, 1 armed chair on each end",
-      "Remaining rounds get white linens",
       "Buffet: 3 silver tops in an L by the pool table, black spandex covers on",
       "Tea station: pull the bar stools from the front and right side of the bar and set them aside — that bar space is for the tea station",
       "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
