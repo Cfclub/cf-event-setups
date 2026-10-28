@@ -90,7 +90,6 @@ const SETUPS = [
       "Chairs theater style facing the TV wall — about 5 rows of 8, no aisle, rows straight",
       "Head table at the front: 3 squares pushed together end to end, facing the chairs, 4 chairs behind it",
       "Left side: 5 square tables pushed together end to end in one long row along the window wall",
-      "One square table and a bar stool at the front corner by the counter",
       "Leave a wide aisle on the right side of the room",
     ],
     notes: [
