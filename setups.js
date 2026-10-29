@@ -66,6 +66,25 @@ const SETUPS = [
     ],
   },
   {
+    id: "team-trivia",
+    name: "Team Trivia",
+    room: "Cherokee",
+    headcount: "Teams of 6",
+    photos: ["photos/trivia-room.jpg", "photos/trivia-popcorn.jpg"],
+    steps: [
+      "Rectangular tables spread across the room, all running the same direction toward the stage — mix of wood tops, silver tops, and 6' white folding tables is fine",
+      "6 chairs per table: 2 down each side, 1 on each end",
+      "Leave clear aisles between tables so teams can get to the snack station",
+      "Popcorn station by the back window: popcorn cart with the seasoning shakers on top, scoop, scissors, and popcorn boxes on the side shelf",
+      "Silver table next to the cart for the popcorn kernel packs",
+      "Water cooler beside the popcorn cart with a stack of cups on top",
+      "Plug in the popcorn cart and make sure it powers on",
+    ],
+    notes: [
+      "Popcorn cart and seasonings come out every time",
+    ],
+  },
+  {
     id: "strings-and-things",
     name: "Strings & Things",
     room: "Hemlock",
