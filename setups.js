@@ -374,6 +374,7 @@ const SETUPS = [
     ],
     notes: [
       "Carolina 2 only opens with over 50 reservations — check the count before you set it",
+      "If there's a carving station: run an extension cord to it and tape the cord down",
       "Same night as Team Trivia in Cherokee",
       "Reset the Overlook to the standard dining setups afterward",
     ],
