@@ -79,6 +79,7 @@ const SETUPS = [
       "Silver table next to the cart for the popcorn kernel packs",
       "Water cooler beside the popcorn cart with a stack of cups on top",
       "Plug in the popcorn cart and make sure it powers on",
+      "Satellite bar along the right wall, near the back of the room",
     ],
     notes: [
       "Popcorn cart and seasonings come out every time",
