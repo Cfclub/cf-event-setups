@@ -357,6 +357,28 @@ const SETUPS = [
     ],
   },
   {
+    id: "monthly-social",
+    name: "Monthly Social",
+    room: "Overlook",
+    headcount: "8- and 10-top rounds",
+    photos: ["photos/social-carolina-1.jpg", "photos/social-carolina-2.jpg", "photos/social-buffet.jpg", "photos/social-dessert.jpg"],
+    steps: [
+      "Clear the everyday dining tables out of Carolina 1 (and Carolina 2 if it's opening)",
+      "Carolina 1: 4 ten-top rounds around the outside perimeter, 1 eight-top round in the middle",
+      "Just outside Carolina 1: 1 more ten-top round and 1 more eight-top round",
+      "Carolina 2 — only if there are over 50 reservations: 4 eight-top rounds",
+      "Banquet stack chairs at every round, evenly spaced",
+      "White linens on every round",
+      "Main buffet line in the Vista/hallway: 4 silver tops in a straight line along the inside wall, leaving the window side open as a walkway",
+      "Dessert table in Carolina 1 next to the linen closet: 1 silver top with 1 wood square on the end",
+    ],
+    notes: [
+      "Carolina 2 only opens with over 50 reservations — check the count before you set it",
+      "Same night as Team Trivia in Cherokee",
+      "Reset the Overlook to the standard dining setups afterward",
+    ],
+  },
+  {
     id: "overlook-layout-map",
     name: "Overlook Dining Room — Layout Map",
     room: "Overlook",
