@@ -120,7 +120,7 @@ const SETUPS = [
     name: "Mountain Chorale — Rehearsal",
     room: "Hemlock",
     headcount: "Hemlock 16 · Oak 20 · Willow 10",
-    photos: ["photos/chorale-rehearsal-room.jpg", "photos/chorale-rehearsal-keyboard.jpg", "photos/chorale-rehearsal-speaker.jpg", "photos/chorale-rehearsal-oak.jpg", "photos/chorale-rehearsal-plan.jpg"],
+    photos: ["photos/chorale-rehearsal-room.jpg", "photos/chorale-rehearsal-keyboard.jpg", "photos/chorale-rehearsal-speaker.jpg", "photos/chorale-rehearsal-oak.jpg", "photos/chorale-rehearsal-willow.jpg", "photos/chorale-rehearsal-plan.jpg"],
     steps: [
       "Hemlock: chairs in curved rows across the back half of the room, all facing the microphone at the front (see photo)",
       "Hemlock: Roland RD-2000 keyboard on the Gator stand at front left, with bench and bar stool",
@@ -131,7 +131,9 @@ const SETUPS = [
       "Oak (altos): 20 chairs — 2 curved rows of 10 along the window wall, all facing the front-left corner (see photo)",
       "Oak: keyboard on a small folding table at the front, with a chair behind it, the Roland amp beside it, and a music stand out front",
       "Oak: clear the room's square tables out of the way — stack them against the back wall by the counter",
-      "Willow (bass): 10 chairs, small table, music stand, keyboard with stand, bench",
+      "Willow (bass): chairs in two curved rows down the middle of the room, facing the inside wall (see photo)",
+      "Willow: keyboard on its stand against the inside wall with a bench, music stand in front of the chairs",
+      "Willow: push the room's tables to the window wall and the back corner to open up the floor",
       "Breakout rooms: 10 chairs each in a curve, music stand and keyboard at the front (see lower boxes on the plan)",
     ],
     notes: [
