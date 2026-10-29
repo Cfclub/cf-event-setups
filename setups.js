@@ -369,7 +369,7 @@ const SETUPS = [
       "Carolina 2 — only if there are over 50 reservations: 4 eight-top rounds",
       "Banquet stack chairs at every round, evenly spaced",
       "White linens on every round",
-      "Main buffet line in the Vista/hallway: 4 silver tops in a straight line along the inside wall, leaving the window side open as a walkway",
+      "Main buffet line in the Vista/hallway: 4 silver tops in a straight line, lined up with the pillars, leaving the window side open as a walkway",
       "Dessert table in Carolina 1 next to the linen closet: 1 silver top with 1 wood square on the end",
     ],
     notes: [
