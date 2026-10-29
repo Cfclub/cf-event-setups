@@ -119,7 +119,7 @@ const SETUPS = [
     id: "chorale-rehearsal",
     name: "Mountain Chorale — Rehearsal",
     room: "Hemlock",
-    headcount: "Hemlock 16 · Oak 16 · Willow 10",
+    headcount: "Hemlock 16 · Oak 20 · Willow 10",
     photos: ["photos/chorale-rehearsal-room.jpg", "photos/chorale-rehearsal-keyboard.jpg", "photos/chorale-rehearsal-speaker.jpg", "photos/chorale-rehearsal-oak.jpg", "photos/chorale-rehearsal-plan.jpg"],
     steps: [
       "Hemlock: chairs in curved rows across the back half of the room, all facing the microphone at the front (see photo)",
@@ -128,7 +128,7 @@ const SETUPS = [
       "Hemlock: JBL EON ONE speaker next to the keyboard, column pole in, plugged in",
       "Hemlock: mic on a boom stand in front of the chairs, music stands out front for the director",
       "Hemlock: square tables pushed together in pairs along the right wall under the windows, and a row of tables along the left wall by the entrance",
-      "Oak (altos): 16 chairs in two curved rows along the window wall, all facing the front-left corner (see photo)",
+      "Oak (altos): 20 chairs — 2 curved rows of 10 along the window wall, all facing the front-left corner (see photo)",
       "Oak: keyboard on a small folding table at the front, with a chair behind it, the Roland amp beside it, and a music stand out front",
       "Oak: clear the room's square tables out of the way — stack them against the back wall by the counter",
       "Willow (bass): 10 chairs, small table, music stand, keyboard with stand, bench",
