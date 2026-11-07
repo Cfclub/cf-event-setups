@@ -86,6 +86,25 @@ const SETUPS = [
     ],
   },
   {
+    id: "cherokee-music-night",
+    name: "Cherokee — Music Night",
+    room: "Cherokee",
+    headcount: "104 seated + high-tops",
+    photos: ["photos/cherokee-music-night-1.jpg", "photos/cherokee-music-night-2.jpg"],
+    steps: [
+      "4 farm tables through the middle of the room, running toward the stage — 12 banquet chairs each (5 down each side, 1 on each end)",
+      "2 eight-top rounds with 8 chairs each",
+      "4 ten-top rounds with 10 chairs each, along the left side of the room",
+      "3 high-top tables with black spandex covers and bar stools, toward the back by the bar",
+      "Black linens on the rounds",
+      "Keep the dance floor in front of the stage clear",
+      "Walk the aisles — a server with a tray needs to pass between the chair backs without anyone pulling in",
+    ],
+    notes: [
+      "Table count: 4 farm, 2 eight-tops, 4 ten-tops, 3 high-tops",
+    ],
+  },
+  {
     id: "strings-and-things",
     name: "Strings & Things",
     room: "Hemlock",
