@@ -139,10 +139,10 @@ const SETUPS = [
     id: "cats-monthly-meeting",
     name: "CATS — Monthly Meeting",
     room: "Hemlock",
-    headcount: "About 40 seated",
+    headcount: "Rows of 8",
     photos: ["photos/cats-meeting.jpg"],
     steps: [
-      "Chairs theater style facing the back wall (TV wall), about 4 rows of 10 with a center aisle",
+      "Chairs theater style facing the back wall (TV wall), rows of 8 with a center aisle",
       "Head table at the front: 3 squares pushed together end to end, 4 chairs behind it facing the audience",
       "Clear the rest of the room's tables to the side walls",
       "Line up the chair backs row to row",
