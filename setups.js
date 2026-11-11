@@ -413,6 +413,24 @@ const SETUPS = [
     ],
   },
   {
+    id: "nine-guys",
+    name: "Nine Guys",
+    room: "Overlook",
+    headcount: "Carolina 1 · 8 seated",
+    photos: ["photos/nine-guys.jpg"],
+    steps: [
+      "Clear the everyday dining tables out of Carolina 1",
+      "4 four-top tables pressed against the wall in a row, white linens on each",
+      "1 ten-top round in the middle of the room, white linen, 8 rollie chairs around it",
+      "1 four-top table pressed against the pillar, white linen",
+      "Room divider between Carolina 1 and the Vista",
+    ],
+    notes: [
+      "Rollie chairs on the round, not banquet chairs",
+      "Reset to Carolina 1 — Standard Dining Setup afterward",
+    ],
+  },
+  {
     id: "overlook-layout-map",
     name: "Overlook Dining Room — Layout Map",
     room: "Overlook",
